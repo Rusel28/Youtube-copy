@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>YouTube.com clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/youtube.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="left-section">
+      <img class="menu-icon" src="icon/bx-menu.svg">
+      <img class="youtube-icon" src="icon/youtubelogo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icon/bx-search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="mic-button">
+        <img class="mic-icon" src="icon/bxs-microphone.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icon/bx-video-plus.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="grid-icon-container">
+        <img class="grid-icon" src="icon/bxs-grid.svg">
+        <div class="tooltip">Menu</div>
+      </div>
+      
+      <div class="notif-icon-container">
+        <img class="notif-icon" src="icon/bx-bell.svg">
+        <div class="notif-count">5</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-user-picture" src="channel-profile/rusel.jpg">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icon/homepage.png">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icon/compass.png">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icon/subscribe.png">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icon/youtube.png">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icon/music.png">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icon/library.png">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/n2RNcPRtAiY?si=mx5wvvqvnjazxCv_" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-1.avif">
+          </a>
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@mkbhd">
+                <img class="profile-picture" src="channel-profile/profile-1.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-1.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Marques Brownlee</div>
+                  <div class="channel-tooltip-stats">15M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://youtu.be/n2RNcPRtAiY?si=mx5wvvqvnjazxCv_" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+  
+            <a href="https://www.youtube.com/@mkbhd" class="video-author-link">
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+            </a>
+            
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/wsTv9y931o8?si=Xz5psOO0Vm2P3RJd" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-2.avif">
+          </a>
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@coding2go">
+                <img class="profile-picture" src="channel-profile/profile-2.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-2.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Coding2GO</div>
+                  <div class="channel-tooltip-stats">128K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://youtu.be/wsTv9y931o8?si=Xz5psOO0Vm2P3RJd" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Learn CSS Flexbox in 20 Minutes (Course)
+              </p>
+            </a>
+            
+            <a href="https://www.youtube.com/@coding2go" class="video-author-link">
+              <p class="video-author">
+                Coding2GO
+               </p>
+            </a>
+          
+            <p class="video-stats">
+              305K views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/bn0Kh9c4Zv4?si=ur4QUu_5BKWItPXn" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-7.avif">
+          </a>
+          <div class="video-time">20:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@MrBeast">
+                <img class="profile-picture" src="channel-profile/profile-3.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-3.jpg">
+                <div>
+                  <div class="channel-tooltip-name">MrBeast</div>
+                  <div class="channel-tooltip-stats">367M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://youtu.be/bn0Kh9c4Zv4?si=ur4QUu_5BKWItPXn" target="_blank" class="video-title-link">
+              <p class="video-title">
+              7 Days Exploring An Underground City
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@MrBeast" class="video-author-link">
+              <p class="video-author">
+              MrBeast
+              </p>
+            </a>
+            
+            <p class="video-stats">
+              131M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/8mbKSTQRbRg?si=8Ol54OCxiCLaR4jC" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-4.avif">
+          </a>
+          <div class="video-time">32:16</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+             <a href="https://www.youtube.com/@VinceAnimation">
+              <img class="profile-picture" src="channel-profile/profile-4.jpg">
+            </a>
+            <div class="channel-tooltip">
+              <img class="channel-tooltip-picture" src="channel-profile/profile-4.jpg">
+              <div>
+                <div class="channel-tooltip-name">Vince Animation</div>
+                <div class="channel-tooltip-stats">840K subscribers</div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://youtu.be/8mbKSTQRbRg?si=8Ol54OCxiCLaR4jC" target="_blank" class="video-title-link">
+              <p class="video-title">
+                LIFE AFTER COLLEGE 2 (Work Experience) | Pinoy Animation
+              </p>
+            </a>
+            
+            <a href="https://www.youtube.com/@VinceAnimation" class="video-author-link">
+              <p class="video-author">
+                Vince Animation
+              </p>
+            </a>
+          
+            <p class="video-stats">
+              353K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/oEQnEgR3tFk?si=tIfPWJ-FSwXnlWHY" target="_blank" class="video-title-link">
+           <img class="thumbnail" src="images/thumbnail-5.avif"> 
+          </a>
+          <div class="video-time">07:18</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@malupitonofficial8425">
+                <img class="profile-picture" src="channel-profile/profile-5.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-5.jpg">
+              <div>
+                <div class="channel-tooltip-name">MALUPITON OFFICIAL</div>
+                <div class="channel-tooltip-stats">578K subscribers</div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://youtu.be/oEQnEgR3tFk?si=tIfPWJ-FSwXnlWHY" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Delivery
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@malupitonofficial8425" class="video-author-link">
+              <p class="video-author">
+                MALUPITON OFFICIAL
+              </p>
+            </a>
+          
+            <p class="video-stats">
+              350K views &#183; 6 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/kMFaoGjW9BA?si=21BA4hWN9hcLKZmg" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-6.avif">
+          </a>
+          <div class="video-time">8:07</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@mattstonie" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-6.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-6.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Matt Stonie</div>
+                  <div class="channel-tooltip-stats">16.4M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/kMFaoGjW9BA?si=21BA4hWN9hcLKZmg" target="_blank" class="video-title-link">
+              <p class="video-title">
+                I NEED to eat 10,000 Calories
+              </p>
+            </a>
+  
+            <a href="https://www.youtube.com/@mattstonie" class="video-author-link">
+              <p class="video-author">
+                Matt Stonie
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              3.1M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/Kmgo00avvEw?si=49c7AoHHVJVjkvyK" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-8.avif">
+          </a>
+          <div class="video-time">4:48:33</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@brocodez?si=prW333oXUGeXAWXI" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-7.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-7.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Bro Code</div>
+                  <div class="channel-tooltip-stats">2.2M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/Kmgo00avvEw?si=49c7AoHHVJVjkvyK" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Java GUI: Full Course ☕ (FREE)
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@brocodez?si=prW333oXUGeXAWXI" class="video-author-link">
+              <p class="video-author">
+                Bro Code
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              2.2M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/X8ipUgXH6jw?si=JcZ5hIM0Mm1dQBWV" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-9.avif">
+          </a>
+          <div class="video-time">8:07</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@fireship?si=_C6Vx3tQD7HJ8zlE" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-8.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-8.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Fireship</div>
+                  <div class="channel-tooltip-stats">3.78M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/X8ipUgXH6jw?si=JcZ5hIM0Mm1dQBWV" target="_blank" class="video-title-link">
+              <p class="video-title">
+                React Native vs Flutter - I built the same chat app with both
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@fireship?si=_C6Vx3tQD7HJ8zlE" class="video-author-link">
+              <p class="video-author">
+                Fireship
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              2.3M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/BTX5RL-nULY?si=DuDkFyNLqGYXxZV5" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-10.avif">
+          </a>
+          <div class="video-time">28:00</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@mplphilippines?si=yjzHLCEJ_bJmAAU5" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-9.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-9.jpg">
+                <div>
+                  <div class="channel-tooltip-name">MPL Philippines</div>
+                  <div class="channel-tooltip-stats">2.13M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/BTX5RL-nULY?si=DuDkFyNLqGYXxZV5" target="_blank" class="video-title-link">
+              <p class="video-title">
+                MPL PH S15 - W4D3 - ONIC VS TWIS GAME 1
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@mplphilippines?si=yjzHLCEJ_bJmAAU5" class="video-author-link">
+              <p class="video-author">
+                MPL Philippines
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              10K views &#183; 13 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/EerdGm-ehJQ?si=rc13T31uCq1pjdg2" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-11.avif">
+          </a>
+          <div class="video-time">22:15:57</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@supersimpledev?si=3SIqBwa8qswnpEgf" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-10.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-10.jpg">
+                <div>
+                  <div class="channel-tooltip-name">SuperSimpleDev</div>
+                  <div class="channel-tooltip-stats">620K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/EerdGm-ehJQ?si=rc13T31uCq1pjdg2" target="_blank" class="video-title-link">
+              <p class="video-title">
+                JavaScript Tutorial Full Course - Beginner to Pro
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@supersimpledev?si=3SIqBwa8qswnpEgf" class="video-author-link">
+              <p class="video-author">
+                SuperSimpleDev
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              4.2M views &#183; 10 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/0aNLFlFFKpw?si=tNrfOPdpsd3jyVFd" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-12.avif">
+          </a>
+          <div class="video-time">5:36</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@amielsol2?si=u8f2ivl4XD-riafL" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-11.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-11.jpg">
+                <div>
+                  <div class="channel-tooltip-name">Amiel Sol</div>
+                  <div class="channel-tooltip-stats">134K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/0aNLFlFFKpw?si=tNrfOPdpsd3jyVFd" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Sa Bawat Sandali - Amiel Sol (Official Music Video)
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@amielsol2?si=u8f2ivl4XD-riafL" class="video-author-link">
+              <p class="video-author">
+                Amiel Sol
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              9.9M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/ZonglE_1_pI?si=hQqODh5gdqU_kvCr" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="images/thumbnail-13.avif">
+          </a>
+          <div class="video-time">30:20</div>
+        </div>
+  
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <div class="profile-picture-container">
+              <a href="https://youtube.com/@wanokunianimeph?si=vx1BZRVnw2g6p5Xo" class="video-author-link">
+                <img class="profile-picture" src="channel-profile/profile-12.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-profile/profile-12.jpg">
+                <div>
+                  <div class="channel-tooltip-name">WanoKuniAnimePH</div>
+                  <div class="channel-tooltip-stats">277K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="video-info">
+            <a href="https://youtu.be/ZonglE_1_pI?si=hQqODh5gdqU_kvCr" target="_blank" class="video-title-link">
+              <p class="video-title">
+                ONE PIECE 1142: SHANKS VS LOKI FLASHBACK?! | MYTHICAL FENRIR ANG DF NI LOKI CONFIRMED?! | DARK NIKA
+              </p>
+            </a>
+  
+            <a href="https://youtube.com/@wanokunianimeph?si=vx1BZRVnw2g6p5Xo" class="video-author-link">
+              <p class="video-author">
+                WanoKuniAnimePH
+              </p>
+            </a>
+  
+            <p class="video-stats">
+              43K views &#183; 11 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
